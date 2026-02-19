@@ -1,0 +1,12 @@
+{
+  "name": "ticketing-system",
+  "version": "1.0.0",
+  "description": "Tycketing system for educational purpose",
+  "license": "MIT",
+  "author": "Arnau Nin <ninbsnss92@gmail.com>",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
