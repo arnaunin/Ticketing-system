@@ -4,9 +4,21 @@
   "description": "Tycketing system for educational purpose",
   "license": "MIT",
   "author": "Arnau Nin <ninbsnss92@gmail.com>",
-  "type": "commonjs",
+  "type": "module",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=prod node server.js",
+    "dev": "NODE_ENV=dev node --watch server.js",
+    "test": "NODE_ENV=test jest"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "express": "^5.2.1",
+    "mongoose": "^9.2.1",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^17.3.1",
+    "morgan": "^1.10.1"
   }
 }
