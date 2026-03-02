@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 
 const ticketSchema = new mongoose.Schema(
   {
-    id: { type: String, default: uuidv4, required: true, unique: true },
+    id: { type: String, default: uuidv4, required: true },
     user: { type: String, required: true },
     createdAt: { type: Date, default: Date.now },
     status: {
@@ -16,7 +16,7 @@ const ticketSchema = new mongoose.Schema(
     description: { type: String, required: true },
   },
   {
-    toJson: {
+    toJSON: {
       transform: function (doc, ret) {
         delete ret.__v;
         delete ret._id;

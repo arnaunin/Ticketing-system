@@ -2,6 +2,9 @@ import "dotenv/config";
 import mongoose from "mongoose";
 import express from "express";
 import morgan from "morgan";
+import usersRoutes from "./routes/usersRoutes.js";
+import ticketsRoutes from "./routes/ticketsRoutes.js"
+import error from "./middlewares/error.js"
 
 const app = express();
 
@@ -18,8 +21,12 @@ mongoose
 app.use(morgan("dev"));
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.status(200).send("Hola, node!");
+app.get("/ping", (req, res) => {
+  res.status(200).send("pong");
 });
+
+app.use("/api/users", usersRoutes);
+app.use("/api/tickets", ticketsRoutes);
+app.use(error);
 
 export default app;
