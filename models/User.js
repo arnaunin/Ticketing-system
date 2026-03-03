@@ -1,10 +1,15 @@
 import mongoose from "mongoose";
 import bcrypt from "bcrypt";
-import { v4 as uuidv4 } from "uuid";
+import crypto from "node:crypto";
 
 const userSchema = new mongoose.Schema(
   {
-    id: { type: String, default: uuidv4, required: true, unique: true },
+    id: {
+      type: String,
+      default: () => crypto.randomUUID(),
+      required: true,
+      unique: true,
+    },
     name: { type: String, required: true },
     email: {
       type: String,
@@ -30,7 +35,7 @@ const userSchema = new mongoose.Schema(
 
 userSchema.pre("save", async function (next) {
   if (!this.isModified("password")) return next();
-  
+
   const salt = await bcrypt.genSalt(10);
   this.password = await bcrypt.hash(this.password, salt);
 });

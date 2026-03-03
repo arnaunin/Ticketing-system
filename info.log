@@ -13,4 +13,210 @@
   level: 'error',
   message: "Cannot read properties of undefined (reading 'replace')",
   timestamp: '2026-03-02T11:07:55.033Z'
+}{
+  metadata: TypeError: Cannot read properties of undefined (reading 'email')
+      at email (/home/arnaunin/ticketing-system/routes/usersRoutes.js:20:51)
+      at Generator.call (/home/arnaunin/ticketing-system/routes/usersRoutes.js:2:1)
+      at Generator._invoke [as next] (/home/arnaunin/ticketing-system/routes/usersRoutes.js:2:1)
+      at asyncGeneratorStep (/home/arnaunin/ticketing-system/routes/usersRoutes.js:2:1)
+      at asyncGeneratorStep (/home/arnaunin/ticketing-system/routes/usersRoutes.js:2:1)
+      at _next (/home/arnaunin/ticketing-system/routes/usersRoutes.js:2:1)
+      at new Promise (<anonymous>)
+      at /home/arnaunin/ticketing-system/routes/usersRoutes.js:2:1
+      at apply (/home/arnaunin/ticketing-system/routes/usersRoutes.js:58:2)
+      at Layer.handleRequest (/home/arnaunin/ticketing-system/node_modules/router/lib/layer.js:152:17)
+      at next (/home/arnaunin/ticketing-system/node_modules/router/lib/route.js:157:13)
+      at Route.dispatch (/home/arnaunin/ticketing-system/node_modules/router/lib/route.js:117:3)
+      at handle (/home/arnaunin/ticketing-system/node_modules/router/index.js:435:11)
+      at Layer.handleRequest (/home/arnaunin/ticketing-system/node_modules/router/lib/layer.js:152:17)
+      at /home/arnaunin/ticketing-system/node_modules/router/index.js:295:15
+      at processParams (/home/arnaunin/ticketing-system/node_modules/router/index.js:582:12)
+      at next (/home/arnaunin/ticketing-system/node_modules/router/index.js:291:5)
+      at router.handle (/home/arnaunin/ticketing-system/node_modules/router/index.js:186:3)
+      at router (/home/arnaunin/ticketing-system/node_modules/router/index.js:60:12)
+      at Layer.handleRequest (/home/arnaunin/ticketing-system/node_modules/router/lib/layer.js:152:17)
+      at trimPrefix (/home/arnaunin/ticketing-system/node_modules/router/index.js:342:13)
+      at /home/arnaunin/ticketing-system/node_modules/router/index.js:297:9
+      at processParams (/home/arnaunin/ticketing-system/node_modules/router/index.js:582:12)
+      at next (/home/arnaunin/ticketing-system/node_modules/router/index.js:291:5)
+      at read (/home/arnaunin/ticketing-system/node_modules/body-parser/lib/read.js:62:5)
+      at jsonParser (/home/arnaunin/ticketing-system/node_modules/body-parser/lib/types/json.js:88:5)
+      at Layer.handleRequest (/home/arnaunin/ticketing-system/node_modules/router/lib/layer.js:152:17)
+      at trimPrefix (/home/arnaunin/ticketing-system/node_modules/router/index.js:342:13)
+      at /home/arnaunin/ticketing-system/node_modules/router/index.js:297:9
+      at processParams (/home/arnaunin/ticketing-system/node_modules/router/index.js:582:12)
+      at next (/home/arnaunin/ticketing-system/node_modules/router/index.js:291:5)
+      at logger (/home/arnaunin/ticketing-system/node_modules/morgan/index.js:144:5)
+      at Layer.handleRequest (/home/arnaunin/ticketing-system/node_modules/router/lib/layer.js:152:17)
+      at trimPrefix (/home/arnaunin/ticketing-system/node_modules/router/index.js:342:13)
+      at /home/arnaunin/ticketing-system/node_modules/router/index.js:297:9
+      at processParams (/home/arnaunin/ticketing-system/node_modules/router/index.js:582:12)
+      at next (/home/arnaunin/ticketing-system/node_modules/router/index.js:291:5)
+      at router.handle (/home/arnaunin/ticketing-system/node_modules/router/index.js:186:3)
+      at app.handle (/home/arnaunin/ticketing-system/node_modules/express/lib/application.js:177:15)
+      at Server.app (/home/arnaunin/ticketing-system/node_modules/express/lib/express.js:38:9)
+      at Server.emit (node:events:508:28)
+      at parserOnIncoming (node:_http_server:1184:12)
+      at HTTPParser.parserOnHeadersComplete (node:_http_common:122:17),
+  level: 'error',
+  message: "Cannot read properties of undefined (reading 'email')",
+  timestamp: '2026-03-02T13:06:11.499Z'
+}
+{
+  metadata: TypeError: Cannot read properties of undefined (reading 'replace')
+      at auth (/home/arnaunin/ticketing-system/middlewares/auth.js:4:44)
+      at Layer.handleRequest (/home/arnaunin/ticketing-system/node_modules/router/lib/layer.js:152:17)
+      at next (/home/arnaunin/ticketing-system/node_modules/router/lib/route.js:157:13)
+      at Route.dispatch (/home/arnaunin/ticketing-system/node_modules/router/lib/route.js:117:3)
+      at handle (/home/arnaunin/ticketing-system/node_modules/router/index.js:435:11)
+      at Layer.handleRequest (/home/arnaunin/ticketing-system/node_modules/router/lib/layer.js:152:17)
+      at /home/arnaunin/ticketing-system/node_modules/router/index.js:295:15
+      at processParams (/home/arnaunin/ticketing-system/node_modules/router/index.js:582:12)
+      at next (/home/arnaunin/ticketing-system/node_modules/router/index.js:291:5)
+      at router.handle (/home/arnaunin/ticketing-system/node_modules/router/index.js:186:3)
+      at router (/home/arnaunin/ticketing-system/node_modules/router/index.js:60:12)
+      at Layer.handleRequest (/home/arnaunin/ticketing-system/node_modules/router/lib/layer.js:152:17)
+      at trimPrefix (/home/arnaunin/ticketing-system/node_modules/router/index.js:342:13)
+      at /home/arnaunin/ticketing-system/node_modules/router/index.js:297:9
+      at processParams (/home/arnaunin/ticketing-system/node_modules/router/index.js:582:12)
+      at next (/home/arnaunin/ticketing-system/node_modules/router/index.js:291:5)
+      at /home/arnaunin/ticketing-system/node_modules/body-parser/lib/read.js:171:5
+      at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+      at invokeCallback (/home/arnaunin/ticketing-system/node_modules/raw-body/index.js:238:16)
+      at done (/home/arnaunin/ticketing-system/node_modules/raw-body/index.js:227:7)
+      at IncomingMessage.onEnd (/home/arnaunin/ticketing-system/node_modules/raw-body/index.js:287:7)
+      at IncomingMessage.emit (node:events:508:28)
+      at endReadableNT (node:internal/streams/readable:1701:12)
+      at processTicksAndRejections (node:internal/process/task_queues:90:21),
+  level: 'error',
+  message: "Cannot read properties of undefined (reading 'replace')",
+  timestamp: '2026-03-02T13:06:11.534Z'
+}
+{
+  metadata: TypeError: Cannot read properties of undefined (reading 'email')
+      at email (/home/arnaunin/ticketing-system/routes/usersRoutes.js:20:51)
+      at Generator.call (/home/arnaunin/ticketing-system/routes/usersRoutes.js:2:1)
+      at Generator._invoke [as next] (/home/arnaunin/ticketing-system/routes/usersRoutes.js:2:1)
+      at asyncGeneratorStep (/home/arnaunin/ticketing-system/routes/usersRoutes.js:2:1)
+      at asyncGeneratorStep (/home/arnaunin/ticketing-system/routes/usersRoutes.js:2:1)
+      at _next (/home/arnaunin/ticketing-system/routes/usersRoutes.js:2:1)
+      at new Promise (<anonymous>)
+      at /home/arnaunin/ticketing-system/routes/usersRoutes.js:2:1
+      at apply (/home/arnaunin/ticketing-system/routes/usersRoutes.js:58:2)
+      at Layer.handleRequest (/home/arnaunin/ticketing-system/node_modules/router/lib/layer.js:152:17)
+      at next (/home/arnaunin/ticketing-system/node_modules/router/lib/route.js:157:13)
+      at Route.dispatch (/home/arnaunin/ticketing-system/node_modules/router/lib/route.js:117:3)
+      at handle (/home/arnaunin/ticketing-system/node_modules/router/index.js:435:11)
+      at Layer.handleRequest (/home/arnaunin/ticketing-system/node_modules/router/lib/layer.js:152:17)
+      at /home/arnaunin/ticketing-system/node_modules/router/index.js:295:15
+      at processParams (/home/arnaunin/ticketing-system/node_modules/router/index.js:582:12)
+      at next (/home/arnaunin/ticketing-system/node_modules/router/index.js:291:5)
+      at router.handle (/home/arnaunin/ticketing-system/node_modules/router/index.js:186:3)
+      at router (/home/arnaunin/ticketing-system/node_modules/router/index.js:60:12)
+      at Layer.handleRequest (/home/arnaunin/ticketing-system/node_modules/router/lib/layer.js:152:17)
+      at trimPrefix (/home/arnaunin/ticketing-system/node_modules/router/index.js:342:13)
+      at /home/arnaunin/ticketing-system/node_modules/router/index.js:297:9
+      at processParams (/home/arnaunin/ticketing-system/node_modules/router/index.js:582:12)
+      at next (/home/arnaunin/ticketing-system/node_modules/router/index.js:291:5)
+      at read (/home/arnaunin/ticketing-system/node_modules/body-parser/lib/read.js:62:5)
+      at jsonParser (/home/arnaunin/ticketing-system/node_modules/body-parser/lib/types/json.js:88:5)
+      at Layer.handleRequest (/home/arnaunin/ticketing-system/node_modules/router/lib/layer.js:152:17)
+      at trimPrefix (/home/arnaunin/ticketing-system/node_modules/router/index.js:342:13)
+      at /home/arnaunin/ticketing-system/node_modules/router/index.js:297:9
+      at processParams (/home/arnaunin/ticketing-system/node_modules/router/index.js:582:12)
+      at next (/home/arnaunin/ticketing-system/node_modules/router/index.js:291:5)
+      at logger (/home/arnaunin/ticketing-system/node_modules/morgan/index.js:144:5)
+      at Layer.handleRequest (/home/arnaunin/ticketing-system/node_modules/router/lib/layer.js:152:17)
+      at trimPrefix (/home/arnaunin/ticketing-system/node_modules/router/index.js:342:13)
+      at /home/arnaunin/ticketing-system/node_modules/router/index.js:297:9
+      at processParams (/home/arnaunin/ticketing-system/node_modules/router/index.js:582:12)
+      at next (/home/arnaunin/ticketing-system/node_modules/router/index.js:291:5)
+      at router.handle (/home/arnaunin/ticketing-system/node_modules/router/index.js:186:3)
+      at app.handle (/home/arnaunin/ticketing-system/node_modules/express/lib/application.js:177:15)
+      at Server.app (/home/arnaunin/ticketing-system/node_modules/express/lib/express.js:38:9)
+      at Server.emit (node:events:508:28)
+      at parserOnIncoming (node:_http_server:1184:12)
+      at HTTPParser.parserOnHeadersComplete (node:_http_common:122:17),
+  level: 'error',
+  message: "Cannot read properties of undefined (reading 'email')",
+  timestamp: '2026-03-02T13:11:36.398Z'
+}
+{
+  metadata: TypeError: Cannot read properties of undefined (reading 'replace')
+      at auth (/home/arnaunin/ticketing-system/middlewares/auth.js:4:44)
+      at Layer.handleRequest (/home/arnaunin/ticketing-system/node_modules/router/lib/layer.js:152:17)
+      at next (/home/arnaunin/ticketing-system/node_modules/router/lib/route.js:157:13)
+      at Route.dispatch (/home/arnaunin/ticketing-system/node_modules/router/lib/route.js:117:3)
+      at handle (/home/arnaunin/ticketing-system/node_modules/router/index.js:435:11)
+      at Layer.handleRequest (/home/arnaunin/ticketing-system/node_modules/router/lib/layer.js:152:17)
+      at /home/arnaunin/ticketing-system/node_modules/router/index.js:295:15
+      at processParams (/home/arnaunin/ticketing-system/node_modules/router/index.js:582:12)
+      at next (/home/arnaunin/ticketing-system/node_modules/router/index.js:291:5)
+      at router.handle (/home/arnaunin/ticketing-system/node_modules/router/index.js:186:3)
+      at router (/home/arnaunin/ticketing-system/node_modules/router/index.js:60:12)
+      at Layer.handleRequest (/home/arnaunin/ticketing-system/node_modules/router/lib/layer.js:152:17)
+      at trimPrefix (/home/arnaunin/ticketing-system/node_modules/router/index.js:342:13)
+      at /home/arnaunin/ticketing-system/node_modules/router/index.js:297:9
+      at processParams (/home/arnaunin/ticketing-system/node_modules/router/index.js:582:12)
+      at next (/home/arnaunin/ticketing-system/node_modules/router/index.js:291:5)
+      at /home/arnaunin/ticketing-system/node_modules/body-parser/lib/read.js:171:5
+      at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+      at invokeCallback (/home/arnaunin/ticketing-system/node_modules/raw-body/index.js:238:16)
+      at done (/home/arnaunin/ticketing-system/node_modules/raw-body/index.js:227:7)
+      at IncomingMessage.onEnd (/home/arnaunin/ticketing-system/node_modules/raw-body/index.js:287:7)
+      at IncomingMessage.emit (node:events:508:28)
+      at endReadableNT (node:internal/streams/readable:1701:12)
+      at processTicksAndRejections (node:internal/process/task_queues:90:21),
+  level: 'error',
+  message: "Cannot read properties of undefined (reading 'replace')",
+  timestamp: '2026-03-02T13:11:36.428Z'
+}
+{
+  metadata: TypeError: Cannot read properties of undefined (reading 'email')
+      at email (/home/arnaunin/ticketing-system/routes/usersRoutes.js:20:51)
+      at Generator.call (/home/arnaunin/ticketing-system/routes/usersRoutes.js:2:1)
+      at Generator._invoke [as next] (/home/arnaunin/ticketing-system/routes/usersRoutes.js:2:1)
+      at asyncGeneratorStep (/home/arnaunin/ticketing-system/routes/usersRoutes.js:2:1)
+      at asyncGeneratorStep (/home/arnaunin/ticketing-system/routes/usersRoutes.js:2:1)
+      at _next (/home/arnaunin/ticketing-system/routes/usersRoutes.js:2:1)
+      at new Promise (<anonymous>)
+      at /home/arnaunin/ticketing-system/routes/usersRoutes.js:2:1
+      at apply (/home/arnaunin/ticketing-system/routes/usersRoutes.js:58:2)
+      at Layer.handleRequest (/home/arnaunin/ticketing-system/node_modules/router/lib/layer.js:152:17)
+      at next (/home/arnaunin/ticketing-system/node_modules/router/lib/route.js:157:13)
+      at Route.dispatch (/home/arnaunin/ticketing-system/node_modules/router/lib/route.js:117:3)
+      at handle (/home/arnaunin/ticketing-system/node_modules/router/index.js:435:11)
+      at Layer.handleRequest (/home/arnaunin/ticketing-system/node_modules/router/lib/layer.js:152:17)
+      at /home/arnaunin/ticketing-system/node_modules/router/index.js:295:15
+      at processParams (/home/arnaunin/ticketing-system/node_modules/router/index.js:582:12)
+      at next (/home/arnaunin/ticketing-system/node_modules/router/index.js:291:5)
+      at router.handle (/home/arnaunin/ticketing-system/node_modules/router/index.js:186:3)
+      at router (/home/arnaunin/ticketing-system/node_modules/router/index.js:60:12)
+      at Layer.handleRequest (/home/arnaunin/ticketing-system/node_modules/router/lib/layer.js:152:17)
+      at trimPrefix (/home/arnaunin/ticketing-system/node_modules/router/index.js:342:13)
+      at /home/arnaunin/ticketing-system/node_modules/router/index.js:297:9
+      at processParams (/home/arnaunin/ticketing-system/node_modules/router/index.js:582:12)
+      at next (/home/arnaunin/ticketing-system/node_modules/router/index.js:291:5)
+      at read (/home/arnaunin/ticketing-system/node_modules/body-parser/lib/read.js:62:5)
+      at jsonParser (/home/arnaunin/ticketing-system/node_modules/body-parser/lib/types/json.js:88:5)
+      at Layer.handleRequest (/home/arnaunin/ticketing-system/node_modules/router/lib/layer.js:152:17)
+      at trimPrefix (/home/arnaunin/ticketing-system/node_modules/router/index.js:342:13)
+      at /home/arnaunin/ticketing-system/node_modules/router/index.js:297:9
+      at processParams (/home/arnaunin/ticketing-system/node_modules/router/index.js:582:12)
+      at next (/home/arnaunin/ticketing-system/node_modules/router/index.js:291:5)
+      at logger (/home/arnaunin/ticketing-system/node_modules/morgan/index.js:144:5)
+      at Layer.handleRequest (/home/arnaunin/ticketing-system/node_modules/router/lib/layer.js:152:17)
+      at trimPrefix (/home/arnaunin/ticketing-system/node_modules/router/index.js:342:13)
+      at /home/arnaunin/ticketing-system/node_modules/router/index.js:297:9
+      at processParams (/home/arnaunin/ticketing-system/node_modules/router/index.js:582:12)
+      at next (/home/arnaunin/ticketing-system/node_modules/router/index.js:291:5)
+      at router.handle (/home/arnaunin/ticketing-system/node_modules/router/index.js:186:3)
+      at app.handle (/home/arnaunin/ticketing-system/node_modules/express/lib/application.js:177:15)
+      at Server.app (/home/arnaunin/ticketing-system/node_modules/express/lib/express.js:38:9)
+      at Server.emit (node:events:508:28)
+      at parserOnIncoming (node:_http_server:1184:12)
+      at HTTPParser.parserOnHeadersComplete (node:_http_common:122:17),
+  level: 'error',
+  message: "Cannot read properties of undefined (reading 'email')",
+  timestamp: '2026-03-02T13:20:07.281Z'
 }

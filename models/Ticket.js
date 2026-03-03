@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
-import { v4 as uuidv4 } from "uuid";
+import crypto from "node:crypto";
 
 const ticketSchema = new mongoose.Schema(
   {
-    id: { type: String, default: uuidv4, required: true },
+    id: { type: String, default: () => crypto.randomUUID(), required: true },
     user: { type: String, required: true },
     createdAt: { type: Date, default: Date.now },
     status: {
