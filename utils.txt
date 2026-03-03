@@ -1,2 +1,0 @@
-Arrancar mongo -> docker compose up -d
-Aturar mongo -> docker compose down 

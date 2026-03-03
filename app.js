@@ -2,9 +2,13 @@ import "dotenv/config";
 import mongoose from "mongoose";
 import express from "express";
 import morgan from "morgan";
+import helmet from "helmet";
+import cors from "cors";
+import compression from "compression";
+import rateLimit from "./helpers/rate_limit.js";
 import usersRoutes from "./routes/usersRoutes.js";
-import ticketsRoutes from "./routes/ticketsRoutes.js"
-import error from "./middlewares/error.js"
+import ticketsRoutes from "./routes/ticketsRoutes.js";
+import error from "./middlewares/error.js";
 
 const app = express();
 
@@ -19,6 +23,12 @@ mongoose
   .catch((err) => console.error("Failed to connect to MongoDB", err));
 
 app.use(morgan("dev"));
+app.use(helmet());
+app.use(cors());
+if (process.env.NODE_ENV === "production") {
+  app.use(compression());
+  app.use(rateLimit);
+}
 app.use(express.json());
 
 app.get("/ping", (req, res) => {
